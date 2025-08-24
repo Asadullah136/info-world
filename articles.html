@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles - Info World</title>
+  <link rel="stylesheet" href="info.css">
+  <style>
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-content">
+    <img src="ChatGPT Image Aug 21, 2025, 02_37_11 AM.png" alt="Info World Logo" class="logo">
+    <div class="header-text">
+      <h1>INFO WORLD</h1>
+      <p>Knowledge • Insights • Updates</p>
+    </div>
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="articles.html" class="active">Articles</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h2>Explore Our Latest Articles</h2>
+</section>
+
+<!-- Articles Section -->
+<div class="articles-container">
+
+  <!-- Article 1 -->
+  <div class="article-card">
+    <img src="https://picsum.photos/400/250?tech" alt="Future of Technology">
+    <div class="article-content">
+      <h3>The Future of Technology</h3>
+      <p class="article-preview">
+        Technology is evolving faster than ever before. Artificial Intelligence, Quantum Computing, and Automation are reshaping our lives...
+      </p>
+      <p class="article-full">
+        From self-driving cars to AI-powered doctors, the possibilities are endless. The coming decades will bring 
+        innovation that once seemed impossible. Businesses and individuals must adapt quickly to survive in 
+        this fast-paced digital world where technology isn’t just a tool, but a partner in human progress.
+      </p>
+      <span class="read-more" onclick="toggleArticle(this)">Read More</span>
+    </div>
+  </div>
+
+  <!-- Article 2 -->
+  <div class="article-card">
+    <img src="https://picsum.photos/400/250?health" alt="Health and Wellness">
+    <div class="article-content">
+      <h3>Health & Wellness in Modern Life</h3>
+      <p class="article-preview">
+        In today’s busy lifestyle, health often takes a back seat. Stress, unhealthy diets, and lack of exercise affect millions worldwide...
+      </p>
+      <p class="article-full">
+        Maintaining mental and physical well-being is crucial. Simple changes like meditation, regular walks, 
+        and balanced nutrition can transform life. Health is not just about living longer, 
+        but about living better every single day.
+      </p>
+      <span class="read-more" onclick="toggleArticle(this)">Read More</span>
+    </div>
+  </div>
+
+  <!-- Article 3 -->
+  <div class="article-card">
+    <img src="https://picsum.photos/400/250?education" alt="Education">
+    <div class="article-content">
+      <h3>Education in a Changing World</h3>
+      <p class="article-preview">
+        The way we learn has changed forever. Online platforms, AI tutors, and digital classrooms are making education more accessible...
+      </p>
+      <p class="article-full">
+        Students no longer depend only on textbooks. Interactive learning tools and global collaboration 
+        have created opportunities for everyone, no matter where they are. Education has truly become 
+        the passport to a better future in this digital age.
+      </p>
+      <span class="read-more" onclick="toggleArticle(this)">Read More</span>
+    </div>
+  </div>
+  
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <p style="font-size: 15px;">&copy; 2025 Info World. All rights reserved.</p>
+  <p style="font-size: 15px;">Designed with ❤️ for learning and sharing</p>
+</footer>
+
+<!-- JavaScript for Read More -->
+<script>
+  function toggleArticle(button) {
+    let fullText = button.previousElementSibling;
+    let preview = fullText.previousElementSibling;
+    if (fullText.style.display === "block") {
+      fullText.style.display = "none";
+      preview.style.display = "block";
+      button.innerText = "Read More";
+    } else {
+      fullText.style.display = "block";
+      preview.style.display = "none";
+      button.innerText = "Read Less";
+    }
+  }
+</script>
+
+</body>
+</html>
